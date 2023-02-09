@@ -1,0 +1,170 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a73e8;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 10px 0 10px;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+li.selected {
+    background-color: #e6f2fd;
+}
+
+#header-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.section {
+    padding: 10px;
+}
+
+#projects-section {
+    width: 20%;
+}
+
+#tasks-section {
+    width: 80%;
+    display: none;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.section-header-title {
+    margin: auto 0;
+}
+
+.add-btn-container {
+    margin-left: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.add-btn {
+    height: 25px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.task-name-container {
+    display: flex;
+}
+
+#completed-tasks-container {
+    margin-top: 20px;
+}
+
+#completed-tasks li > div:first-of-type{
+    text-decoration: line-through;
+}
+
+
+
+
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.5);
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-container {
+    width: 400px;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup-title {
+    margin: 20px 0 0 0;
+}
+
+.name-input {
+    width: 300px;
+    height: 30px;
+    margin: 20px 0;
+}
+
+.notes-textarea {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.popup-btns-container {
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons-container {
+    display: none;
+}
+
+li:hover .buttons-container, .buttons-container:hover {
+    display: block;
+}
+
+.popover-btn {
+    width: 80px;
+    height: 40px;
+}

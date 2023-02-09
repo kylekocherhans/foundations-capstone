@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <span id="header-title">Task Tracker</span>
+    </header>
+    <main>
+        <div id="projects-section" class="section">
+            <div class="section-header">
+                <h2 class="section-header-title">Projects</h2>
+            </div>
+
+            <div class="add-btn-container">
+                <button id="add-project-btn" class="add-btn">Add Project</button>
+            </div>
+
+            <div id="projects-container">
+                <ul id="projects"></ul>
+            </div>
+        </div>
+
+        <div id="tasks-section" class="section">
+            <div class="section-header">
+                <h2 id="selected-project-name" class="section-header-title"></h2>
+            </div>
+
+            <div class="add-btn-container">
+                <button id="add-task-btn" class="add-btn">Add Task</button>
+            </div>
+
+            <div id="tasks-container">
+                <ul id="tasks"></ul>
+            </div>
+
+            <div id="completed-tasks-container">
+                <ul id="completed-tasks"></ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
